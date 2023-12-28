@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="bg-white flex flex-col h-screen md:h-auto justify-between md:justify-center gap-10 p-10 md:rounded-xl md:max-w-[400px] md:gap-8 font-roboto"
+	class="bg-white flex flex-col h-svh md:h-auto justify-between md:justify-center gap-10 p-10 md:rounded-xl md:max-w-[400px] md:gap-8 font-roboto"
 >
 	<div class="flex flex-col gap-8 justify-center md:pt-0">
 		<Success />
