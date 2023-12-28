@@ -13,11 +13,11 @@
 	}
 </script>
 
-<label class="flex flex-col gap-2 text-sm">
+<label class="flex flex-col gap-2 text-xs">
 	<div class="flex justify-between">
 		{label}
 		{#if error}
-			<span class="text-tomato text-xs">{error}</span>
+			<span class="text-tomato text-xs font-bold">{error}</span>
 		{/if}
 	</div>
 	<input
