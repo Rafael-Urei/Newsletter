@@ -14,18 +14,20 @@
 </script>
 
 <label class="flex flex-col gap-2 text-sm">
-	{label}
+	<div class="flex justify-between">
+		{label}
+		{#if error}
+			<span class="text-tomato text-xs">{error}</span>
+		{/if}
+	</div>
 	<input
-		type="email"
+		type="text"
 		{name}
 		{value}
 		{placeholder}
 		on:input={handleInput}
 		on:input
 		class="py-3 px-2 rounded-md border focus:border-black outline-none text-base {error &&
-			'border-rose-600'}"
+			'bg-tomato_opacity border-tomato'}"
 	/>
-	{#if error}
-		<span class="text-rose-600 text-xs">{error}</span>
-	{/if}
 </label>

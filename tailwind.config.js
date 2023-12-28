@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				tomato: 'hsl(var(--tomato))',
+				tomato_opacity: 'hsl(var(--tomato-opacity))',
 				dark_slate_grey: 'hsl(var(--dark-slate-grey))',
 				charcoal_grey: 'hsl(var(--charcoal-grey))',
 				grey: 'hsl(var(--grey))'
