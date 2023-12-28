@@ -2,6 +2,7 @@
 	import Button from '../components/Button/button.svelte';
 	import Listcheck from '../components/Icons/listcheck.svelte';
 	import Input from '../components/Input/input.svelte';
+	import { enhance } from '$app/forms';
 
 	let email: string;
 </script>
@@ -30,9 +31,14 @@
 				</li>
 			</ul>
 		</div>
-		<form class="flex flex-col gap-5">
-			<Input label={'Email address'} placeholder={'email@company.com'} name={email} />
-			<Button content={'Subscribe to monthly newsletter'} />
+		<form method="post" action="?/confirm" use:enhance class="flex flex-col gap-5">
+			<Input
+				name="email"
+				label="Email address"
+				placeholder="email@company.com"
+				bind:value={email}
+			/>
+			<Button>Subscribe to monthly newsletter</Button>
 		</form>
 	</section>
 	<aside>
