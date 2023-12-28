@@ -4,6 +4,7 @@
 	import Input from '../components/Input/input.svelte';
 	import { enhance } from '$app/forms';
 
+	export let form;
 	let email: string;
 </script>
 
@@ -36,6 +37,7 @@
 				name="email"
 				label="Email address"
 				placeholder="email@company.com"
+				error={form?.error ? form?.error : ''}
 				bind:value={email}
 			/>
 			<Button>Subscribe to monthly newsletter</Button>
