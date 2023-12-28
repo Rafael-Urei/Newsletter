@@ -5,9 +5,9 @@
 </script>
 
 <div
-	class="bg-white flex flex-col h-screen md:h-auto justify-between md:justify-center p-10 md:rounded-xl md:max-w-[400px] md:gap-8 font-roboto"
+	class="bg-white flex flex-col h-screen md:h-auto justify-between md:justify-center gap-10 p-10 md:rounded-xl md:max-w-[400px] md:gap-8 font-roboto"
 >
-	<div class="flex flex-col gap-8 pt-20 md:pt-0">
+	<div class="flex flex-col gap-8 justify-center md:pt-0">
 		<Success />
 		<h1 class="text-charcoal_grey text-clamp font-bold leading-[3rem]">Thanks for subscribing!</h1>
 		<p class="text-sm">

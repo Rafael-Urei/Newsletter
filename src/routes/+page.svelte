@@ -53,7 +53,7 @@
 	</section>
 	<aside>
 		<picture>
-			<source srcset="/assets/images/illustration-sign-up-mobile.svg" media="(max-width: 800px)" />
+			<source srcset="/assets/images/illustration-sign-up-mobile.svg" media="(max-width: 760px)" />
 			<img src="/assets/images/illustration-sign-up-desktop.svg" alt="" />
 		</picture>
 	</aside>
