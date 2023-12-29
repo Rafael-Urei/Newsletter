@@ -1,3 +1,5 @@
+import { SendEmailResend } from '../../api/send';
+
 export function validateEmail(email: string) {
 	const isValid = !email.includes('@');
 
@@ -11,5 +13,5 @@ export function validateEmail(email: string) {
 }
 
 export function sendEmail(email: string) {
-	console.log(email);
+	SendEmailResend(email);
 }
